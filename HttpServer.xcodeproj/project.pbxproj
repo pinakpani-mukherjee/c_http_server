@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		C09058FA28EF3EFC0087FE4C /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = C09058F928EF3EFC0087FE4C /* main.c */; };
+		C090590328EF458B0087FE4C /* Server.c in Sources */ = {isa = PBXBuildFile; fileRef = C090590228EF458B0087FE4C /* Server.c */; };
+		C090590528EF4D240087FE4C /* test.c in Sources */ = {isa = PBXBuildFile; fileRef = C090590428EF4D240087FE4C /* test.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,9 @@
 /* Begin PBXFileReference section */
 		C09058F628EF3EFC0087FE4C /* HttpServer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HttpServer; sourceTree = BUILT_PRODUCTS_DIR; };
 		C09058F928EF3EFC0087FE4C /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		C090590128EF458B0087FE4C /* Server.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Server.h; sourceTree = "<group>"; };
+		C090590228EF458B0087FE4C /* Server.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Server.c; sourceTree = "<group>"; };
+		C090590428EF4D240087FE4C /* test.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = test.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +46,7 @@
 		C09058ED28EF3EFC0087FE4C = {
 			isa = PBXGroup;
 			children = (
+				C090590028EF45690087FE4C /* Networking */,
 				C09058F828EF3EFC0087FE4C /* HttpServer */,
 				C09058F728EF3EFC0087FE4C /* Products */,
 			);
@@ -60,6 +66,16 @@
 				C09058F928EF3EFC0087FE4C /* main.c */,
 			);
 			path = HttpServer;
+			sourceTree = "<group>";
+		};
+		C090590028EF45690087FE4C /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				C090590128EF458B0087FE4C /* Server.h */,
+				C090590228EF458B0087FE4C /* Server.c */,
+				C090590428EF4D240087FE4C /* test.c */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,6 +135,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C090590528EF4D240087FE4C /* test.c in Sources */,
+				C090590328EF458B0087FE4C /* Server.c in Sources */,
 				C09058FA28EF3EFC0087FE4C /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -238,6 +256,7 @@
 		C09058FE28EF3EFC0087FE4C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CJT65P28V5;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -248,6 +267,7 @@
 		C09058FF28EF3EFC0087FE4C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CJT65P28V5;
 				ENABLE_HARDENED_RUNTIME = YES;
